@@ -74,13 +74,13 @@ module Phono::ARPABET
     end
 
     private def validate_code(code : String) : Nil
-      unless ARPABET::ALPHABET.includes?(code)
+      unless ALPHABET.includes?(code)
         raise ParseException.new("#{code} is not an ARPABET phoneme code")
       end
     end
 
     private def validate_stress(code : String) : Nil
-      if @stress.nil? && ARPABET::VOWELS.includes?(code)
+      if @stress.nil? && VOWELS.includes?(code)
         if @strict_stress
           raise ParseException.new("#{code} needs a stress marker")
         else
