@@ -7,13 +7,13 @@ describe ARPABET do
     end
 
     it "fails with a single unknown phoneme" do
-      expect_raises(ArgumentError) do
+      expect_raises(ARPABET::ParseException) do
         ARPABET.parse("AB")
       end
     end
 
     it "fails with an unknown phoneme among valid phonemes" do
-      expect_raises(ArgumentError) do
+      expect_raises(ARPABET::ParseException) do
         ARPABET.parse(
           "AE AB IY",
           strict_stress: false
@@ -125,7 +125,7 @@ describe ARPABET do
 
     context "with strict_stress = true" do
       it "fails with unmarked stress vowel code" do
-        expect_raises(ArgumentError) do
+        expect_raises(ARPABET::ParseException) do
           ARPABET.parse("AA")
         end
       end
