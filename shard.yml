@@ -1,0 +1,15 @@
+name: phono
+version: 0.1.0
+
+description:
+  A Crystal library to parse and convert between ARPABET/IPA strings.
+
+authors:
+  - Nick Maloucaze <nickmaloucaze@gmail.com>
+
+homepage: https://github.com/maloucaze/phono.cr
+repository: https://github.com/maloucaze/phono.cr
+
+crystal: 1.7.0
+
+license: MIT
