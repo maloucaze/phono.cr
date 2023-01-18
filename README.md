@@ -12,10 +12,12 @@ As of now, only parsing ARPABET strings is possible.
 
 #### TODO
 
-- Implement parser for IPA strings
+- Implement parser for IPA strings - progress will be tracked in 
+[feature/no-ref/ipa](tree/feature/no-ref/ipa)
 - Implement conversion between ARPABET and IPA
 - Possible support for other ARPABET auxiliary symbols (only stress markers are
-supported)
+supported) - progress will be tracked in 
+[feature/no-ref/arpabet](tree/feature/no-ref/arpabet)
 
 ## Install
 
